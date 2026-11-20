@@ -7,3 +7,8 @@ variable "project_name" {
   type    = string
   default = "tf-static-site"
 }
+
+variable "environment" {
+  type    = string
+  default = "dev"
+}
