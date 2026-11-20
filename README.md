@@ -1,3 +1,5 @@
+![Terraform CI](https://github.com/kadbeep/terraform-s3-static-website/actions/workflows/terraform-ci.yml/badge.svg?branch=main)
+
 # Host a Static Website on Amazon S3 using Terraform
 
 Terraform code that creates an S3 bucket with static website hosting,
