@@ -5,6 +5,11 @@ resource "random_id" "suffix" {
 resource "aws_s3_bucket" "site" {
   bucket        = "${var.project_name}-${random_id.suffix.hex}"
   force_destroy = true
+  tags = {
+    Environment = var.environment
+    ManagedBy   = "terraform"
+    Project     = var.project_name
+  }
 }
 
 resource "aws_s3_bucket_website_configuration" "site" {
